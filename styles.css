@@ -1,20 +1,26 @@
 * {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Overall site settings */
 html {
-    background: #D2D3C9;
+    background: #191A19;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1500px;
+    margin: auto;
+    justify-content: center;
 }
 
 /* Header Code */
 header {
-    background: #F6830F;
+    background: #1E5128;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    color: #D8E9A8;
 }    
 
 header .top-head {
@@ -22,7 +28,7 @@ header .top-head {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5em 0;
+    margin: 20px 150px 0;
     
 }
     
@@ -33,13 +39,14 @@ header .top-head ul {
     
 }
 .top-head li {
-    margin-left: 10px;
+    margin-left: 15px;
 }
     
 header .top-content {
     display: flex;
     justify-content: space-between;
-    margin: 5em 5em 0;
+    margin: 5em 150px 0;
+    padding-bottom: 50px;
 }
 .top-content .left-side {
     width: 400px;
@@ -49,18 +56,41 @@ header .top-content {
     padding-bottom: 1em;
 }
 
+/* img styling */
+header img {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* button styling */
+button {
+    color: #D8E9A8;
+    background-color: #191A19;
+    border: 2px solid #D8E9A8;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: inherit;
+}
+
 /* Body Code */
 .pageheader {
     display: flex;
     justify-content: center;
+    color: #D8E9A8;
+    background: #4E9F3D;
+    padding-top: 60px;
+    padding-bottom: 50px;
 }
 .testimonial {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5em 6em 5em 6em;
-    background-color: #0E918C;
-    color: #D2D3C9;
+    padding: 50px 350px 50px 350px;
+    background-color: #4E9F3D;
+    color: #D8E9A8;
 }
 .testimonial .testi {
     font-size: 36px;
@@ -70,4 +100,50 @@ header .top-content {
     align-self: flex-end;
     font-size: 36px;
     font-weight: bolder;
+}
+
+/* Bottom Box Styling */
+
+body .call-frame {
+    display: flex;
+    justify-content: center;
+    background-color: #D8E9A8;
+    padding: 50px;
+}
+body .call-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D8E9A8;
+    background-color: #1E5128;
+    width: 900px;
+    border-radius: 15px;
+    padding: 50px 90px 50px;
+}
+.calltoact h1 {
+    font-size: x-large;
+}
+.calltoact p {
+    font-size: larger;
+}
+
+/* Row Section Styling */
+body .row-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #4E9F3D;
+    gap: 100px;
+}
+.row-info .box {
+    height: 200px;
+    width: 200px;
+    border: 4px solid #D8E9A8;
+    border-radius: 10px;
+}
+.row-info p {
+    display: flex;
+    justify-content: center;
+    font-family: inherit;
+    color: #D8E9A8;
 }
