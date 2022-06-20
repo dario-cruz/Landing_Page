@@ -1,5 +1,5 @@
 * {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -25,6 +25,7 @@ header {
 
 header .top-head {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +45,7 @@ header .top-head ul {
     
 header .top-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 5em 150px 0;
     padding-bottom: 50px;
@@ -59,8 +61,9 @@ header .top-content {
 /* img styling */
 header img {
     display: flex;
-    width: 500px;
-    height: 300px;
+    flex: 1 1 auto;
+    max-width: 500px;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -95,6 +98,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 800px;
+    margin-top: 60px;
 }
 .testimonial .testi {
     font-size: 36px;
