@@ -1,5 +1,5 @@
 * {
-    /* border: 2px solid black; */
+    border: 2px solid black;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -78,6 +78,7 @@ button {
 /* Body Code */
 .pageheader {
     display: flex;
+    flex: 1;
     justify-content: center;
     color: #D8E9A8;
     background: #4E9F3D;
@@ -86,11 +87,14 @@ button {
 }
 .testimonial {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 350px 50px 350px;
+    justify-content: center;
     background-color: #4E9F3D;
     color: #D8E9A8;
+}
+.testimonial .test-box {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
 }
 .testimonial .testi {
     font-size: 36px;
@@ -107,7 +111,7 @@ button {
 body .call-frame {
     display: flex;
     justify-content: center;
-    background-color: #D8E9A8;
+    background-color: #4E9F3D;
     padding: 50px;
 }
 body .call-box {
@@ -146,4 +150,14 @@ body .row-info {
     justify-content: center;
     font-family: inherit;
     color: #D8E9A8;
+}
+
+/* Footer styling */
+footer {
+    background-color: #D8E9A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: inherit;
 }
